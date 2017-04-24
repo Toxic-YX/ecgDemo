@@ -1,0 +1,108 @@
+//
+//  BoSiPrefix.pch
+//  SuoSiApp
+//
+//  Created by zhang on 16/4/1.
+//  Copyright © 2016年 Ym. All rights reserved.
+//
+/***
+ 
+ cell.tag = indexPath.row + 10;
+ 登陆的 用户名tag  500
+ 
+ 登陆的 密码 tag   501
+ 注册的账号
+ self.accountTF.tag = 500;
+ 注册的验证码
+ self.verificationTF.tag = 504;
+ 注册的密码
+     self.passwordTF.tag = 501;
+ 注册的身份证
+ self.IDTF.tag  =506;
+ ***/
+
+/***
+ 3天的button tag 值 530
+ 5天       531
+ 7天       532
+ 关闭       533
+ ***/
+
+
+
+
+#ifndef BoSiPrefix_pch
+#define BoSiPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+
+// 自定义类
+#import "UIView+WLFrame.h"
+
+#endif
+
+
+//满屏 高  宽
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScrenWidth [UIScreen mainScreen].bounds.size.width
+#define kScrenHeight [UIScreen mainScreen].bounds.size.height
+
+//  定义颜色
+#define BSRed [UIColor redColor]
+#define BSOrange  [UIColor orangeColor]
+#define BSYellow  [UIColor yellowColor]
+#define BSGreen  [UIColor greenColor]
+#define BSCyan  [UIColor cyanColor]
+#define BSBlue  [UIColor blueColor]
+#define BSPurple  [UIColor purpleColor]
+#define BSWhite  [UIColor whiteColor]
+#define BSBlack  [UIColor blackColor]
+#define BSGray  [UIColor grayColor]
+
+#define BSBTGreen [UIColor colorWithRed:0 green:110.0/255 blue:50.0/255 alpha:1]
+#define BSBackColor [UIColor colorWithRed:235.0/255 green:235.0/255 blue:236.0/255 alpha:1]
+#define BSBackViewColor [UIColor colorWithRed:40.0/255 green:40.0/255 blue:40.0/255 alpha:1]
+#define BSSaveBTGreen [UIColor colorWithRed:12.0/255 green:93.0/255 blue:35.0/255 alpha:1]
+
+#define UIColorFromHex(HexValue) ([UIColor colorWithHex:HexValue])/**<转换16进制颜色*/
+
+//自定义高度
+#define kMartin5 5
+#define kMartin10 10
+#define kMartin15 15
+#define kMartin20 20
+#define kMartin25 25
+#define kMartin30 30
+#define kMartin40 40
+#define kMartin50 50
+#define kMartin80 80
+#define kMartin60 60
+#define kMartin100 100
+
+#define kMartin86 86
+
+#define BSButton [UIButton buttonWithType:(UIButtonTypeCustom)]
+
+//不同的手机1mm所代表的逻辑分辨率的点数
+#define k1mm (64.100/2)
+//6+设计的屏幕根理想情况下 是不一样的
+#define k6pmm (60.400/2)
+
+//引导页的数目
+#define Guide_numbers 3
+
+//网络接口
+#define NetStr @"http://192.168.1.202:8001"
+//#define NetStr @"http://192.168.1.134:56285"
+//#define NetStr @"http://www.thoth-health.com"
+#define changePassword @"api/User/ChangePwd"
+
+
+#endif /* BoSiPrefix_pch */
+
+
